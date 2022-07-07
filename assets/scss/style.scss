@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$colorPrimario: aliceblue;
+$Body-font-family: Bebas Neue;
+body{
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+    .nav-link{
+        color: $colorPrimario;
+        font-family: $Body-font-family;
+        font-size: 35px;
+    }
+    .frase{
+        font-family: $Body-font-family;
+        color: $colorPrimario;
+        font-size: 100px;
+    }
+}
+
+.fondeGui{
+    background-image: url(../img/fondeGui.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: initial;
+    background-size: 100%;
+    background-size: cover;
+    .fraseQuemSou{
+        font-family: $Body-font-family;
+        color: $colorPrimario;
+        font-size: 45px;
+    }
+}
+
+
+
+p{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    font-size: 30px;
+}
+h4{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    font-size: 45px;
+}
+.form-label{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    font-size: 20px;
+}
+
+
+
+/*---FOOTER---*/
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    .img{
+        margin-left: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    .pie{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
