@@ -83,8 +83,6 @@ h4 {
   row-gap: 25px;
 }
 .main .divG img {
-  max-width: 450px;
-  max-height: 350px;
   transition: all 1s;
 }
 .main .divG .mainImg:hover {
@@ -179,7 +177,7 @@ footer .pie {
 @media (max-width: 400px) {
   .fondoGal {
     grid-template-columns: 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: auto;
     grid-template-areas: " header " " main   " " footer ";
   }
   .fraseGal {
@@ -194,7 +192,7 @@ footer .pie {
     font-size: 15px;
   }
   .divG {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   img {
     max-width: 150px;

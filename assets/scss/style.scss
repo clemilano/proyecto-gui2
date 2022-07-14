@@ -85,8 +85,6 @@ h4{
         margin-left: 35px;
         row-gap: 25px;
         img{
-            max-width: 450px;
-            max-height: 350px;
             transition: all 1s;
         }
         .mainImg:hover{
@@ -131,6 +129,7 @@ h4{
         font-size: 15px;
     }
 }
+
 
 /*---FOOTER---*/
 
@@ -191,9 +190,10 @@ footer{
 }
 @media(max-width: 400px){
 
+
     .fondoGal{   
         grid-template-columns: 1fr;
-        grid-template-rows: 50px;
+        grid-template-rows: auto;
         grid-template-areas: " header "
                             " main   "
                             " footer ";
@@ -211,7 +211,7 @@ footer{
     }
 
     .divG{
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr ;
     }
 
     img{
