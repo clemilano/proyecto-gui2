@@ -19,7 +19,7 @@ body .frase {
 }
 
 .fondeGui {
-  background-image: url(../img/fondeGui.jpeg);
+  background-image: url(../img/fondeGuiR.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: initial;
@@ -44,10 +44,93 @@ h4 {
   font-size: 45px;
 }
 
-.form-label {
+/*-------GALERIA CON GRID-----*/
+.fondoGal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 65px auto 80px;
+  grid-template-areas: " header header header " " main    main   main   " " footer  footer footer ";
+  background-image: url(../img/randomfondo.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: initial;
+  background-size: 100%;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 4em;
+  min-height: 100vh;
+}
+.fondoGal .header {
+  grid-area: header;
+}
+.fondoGal .logo {
+  margin: 15px;
+  padding: 15px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/*----MAIN----*/
+.main {
+  grid-area: main;
+}
+.main .fraseGal {
+  margin: 85px;
+  padding: 30px;
   font-family: Bebas Neue;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 45px;
+}
+.main .divG {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 35px;
+  row-gap: 25px;
+}
+.main .divG img {
+  max-width: 450px;
+  max-height: 350px;
+  transition: all 1s;
+}
+.main .divG .mainImg:hover {
+  transform: translate(50px, 30px) scale(1.2);
+}
+.main .divG .mainImg1:hover {
+  transform: translate(-50px, -30px) scale(1.2);
+}
+.main .divG .mainImg2:hover {
+  transform: scale(1.2);
+}
+
+/*--------CONTACTO---------*/
+.titu {
+  font-family: Bebas Neue;
+  color: aliceblue;
+  font-size: 45px;
+  text-align: start;
+}
+
+.formRegister {
+  width: 400px;
+  padding: 20px;
+  margin: 45px;
+  box-shadow: 7px 13px 37px #000;
+}
+.formRegister .controls {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: none;
+  font-family: Bebas Neue;
+}
+.formRegister .botons {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 16px 0;
+  font-family: Bebas Neue;
+  font-size: 15px;
 }
 
 /*---FOOTER---*/
