@@ -33,6 +33,7 @@ body .frase {
 }
 
 p {
+  width: 80vw;
   font-family: Bebas Neue;
   color: aliceblue;
   font-size: 30px;
@@ -62,12 +63,6 @@ h4 {
 }
 .fondoGal .header {
   grid-area: header;
-}
-.fondoGal .logo {
-  margin: 15px;
-  padding: 15px;
-  max-width: 100px;
-  max-height: 100px;
 }
 
 /*----MAIN----*/
@@ -148,4 +143,70 @@ footer .img {
 footer .pie {
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fonde {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: " header" " main  " "footer ";
+  }
+  .divG {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  img {
+    max-width: 250px;
+    max-height: 200px;
+  }
+  .frase {
+    font-size: 50px;
+  }
+  .fraseQuemSou {
+    margin: 50px;
+    padding: 15px;
+    font-size: 20px;
+  }
+  p {
+    margin: 35px;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .cardText {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .fondoGal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: " header " " main   " " footer ";
+  }
+  .fraseGal {
+    width: 80vw;
+    font-size: 50px;
+    margin: 15px;
+  }
+  p {
+    width: 80vw;
+    margin: 15px;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .divG {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .formRegister {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+  }
+  .titu {
+    margin: 10px;
+    font-size: 25px;
+  }
 }
