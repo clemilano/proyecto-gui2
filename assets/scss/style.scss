@@ -188,7 +188,7 @@ footer{
     }
 
 }
-@media(max-width: 400px){
+@media(max-width: 450px){
 
 
     .fondoGal{   
@@ -211,12 +211,13 @@ footer{
     }
 
     .divG{
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 
     img{
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 100px;
+        margin: 5px;
     }
 
 .formRegister{

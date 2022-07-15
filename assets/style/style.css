@@ -174,7 +174,7 @@ footer .pie {
     font-size: 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .fondoGal {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -195,8 +195,9 @@ footer .pie {
     grid-template-columns: 1fr;
   }
   img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
   }
   .formRegister {
     width: 300px;
