@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 $colorPrimario: aliceblue;
 $Body-font-family: Bebas Neue;
+
 body{
     background-image: url(../img/randomfondo.jpg);
     background-position: center;
@@ -18,6 +24,7 @@ body{
         font-family: $Body-font-family;
         color: $colorPrimario;
         font-size: 100px;
+    
     }
 }
 
@@ -29,23 +36,26 @@ body{
     background-size: 100%;
     background-size: cover;
     .fraseQuemSou{
+        margin: 50px;
         font-family: $Body-font-family;
         color: $colorPrimario;
         font-size: 45px;
     }
+    p{
+        width: 80vw;
+        font-family: $Body-font-family;
+        color: $colorPrimario;
+        font-size: 25px;
+    }
 }
 
-p{
-    width: 80vw;
-    font-family: $Body-font-family;
-    color: $colorPrimario;
-    font-size: 30px;
-}
+
 h4{
     font-family: $Body-font-family;
     color: $colorPrimario;
     font-size: 45px;
 }
+
 
 /*-------GALERIA CON GRID-----*/
 
@@ -69,7 +79,6 @@ h4{
         grid-area: header;
     }
 }
-/*----MAIN----*/
 .main{
     grid-area: main;
     .fraseGal{
@@ -98,13 +107,31 @@ h4{
         }
     }
 }
+.fotosParrafos{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card img{
+    margin: 25px;
+}
+.cardText{
+    font-size: 15px;
+}
+.cardTitu{
+    margin: 25px;
+}
 
 /*--------CONTACTO---------*/
 .titu{
     font-family: $Body-font-family;
     color: $colorPrimario;
     font-size: 45px;
-    text-align: start;
 }
 
 .formRegister{
@@ -154,7 +181,7 @@ footer{
 @media(max-width:768px){
     .fonde{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px auto 50px;
         grid-template-areas: " header"
                             " main  "
@@ -166,8 +193,8 @@ footer{
     }
 
     img{
-        max-width: 250px;
-        max-height: 200px;
+        max-width: 350px;
+        max-height: 300px;
     }
     .frase{
         font-size: 50px;
@@ -200,8 +227,8 @@ footer{
     }
     .fraseGal{
         width: 80vw;
-        font-size: 50px;
-        margin: 15px;
+        font-size: 40px;
+        margin: 5px;
     }
     p{
         width: 80vw;
@@ -210,15 +237,16 @@ footer{
         font-size: 15px;
     }
 
-    .divG{
+    .main .divG{
         grid-template-columns: 1fr;
     }
 
     img{
-        max-width: 100px;
-        max-height: 100px;
-        margin: 5px;
+        max-width: 350px;
+        max-height: 300px;
+        margin: 15px;
     }
+
 
 .formRegister{
     width: 300px;
