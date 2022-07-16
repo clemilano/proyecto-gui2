@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 body {
   background-image: url(../img/randomfondo.jpg);
   background-position: center;
@@ -20,7 +19,7 @@ body .frase {
 }
 
 .fondeGui {
-  background-image: url(../img/fondeGuiR.png);
+  background-image: url(../img/fondeGuiR.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: initial;
@@ -28,22 +27,43 @@ body .frase {
   background-size: cover;
 }
 .fondeGui .fraseQuemSou {
+  margin: 50px;
   font-family: Bebas Neue;
   color: aliceblue;
   font-size: 45px;
 }
-
-p {
-  width: 80vw;
+.fondeGui p {
+  margin: 20px;
   font-family: Bebas Neue;
   color: aliceblue;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h4 {
   font-family: Bebas Neue;
   color: aliceblue;
   font-size: 45px;
+}
+
+.fotosParrafos {
+  font-family: Bebas Neue;
+  color: aliceblue;
+}
+
+.imgTarjeta {
+  margin: 25px;
+}
+
+.textTarjeta {
+  margin: 25px;
+  font-family: Bebas Neue;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.tituTarjeta {
+  margin: 35px;
+  font-size: 60px;
 }
 
 /*-------GALERIA CON GRID-----*/
@@ -66,7 +86,6 @@ h4 {
   grid-area: header;
 }
 
-/*----MAIN----*/
 .main {
   grid-area: main;
 }
@@ -98,10 +117,10 @@ h4 {
 
 /*--------CONTACTO---------*/
 .titu {
+  margin: 30px;
   font-family: Bebas Neue;
   color: aliceblue;
-  font-size: 45px;
-  text-align: start;
+  font-size: 60px;
 }
 
 .formRegister {
@@ -148,15 +167,15 @@ footer .pie {
   .fonde {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 50px auto;
     grid-template-areas: " header" " main  " "footer ";
   }
   .main .divG {
     grid-template-columns: 1fr 1fr;
   }
   img {
-    max-width: 250px;
-    max-height: 200px;
+    max-width: 350px;
+    max-height: 300px;
   }
   .frase {
     font-size: 50px;
@@ -176,6 +195,9 @@ footer .pie {
   }
 }
 @media (max-width: 450px) {
+  .fondeGui {
+    background-position: right;
+  }
   .fondoGal {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

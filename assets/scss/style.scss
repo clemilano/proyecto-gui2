@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-.{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 $colorPrimario: aliceblue;
 $Body-font-family: Bebas Neue;
@@ -29,7 +25,7 @@ body{
 }
 
 .fondeGui{
-    background-image: url(../img/fondeGuiR.png);
+    background-image: url(../img/fondeGuiR.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: initial;
@@ -42,7 +38,7 @@ body{
         font-size: 45px;
     }
     p{
-        width: 80vw;
+        margin: 20px;
         font-family: $Body-font-family;
         color: $colorPrimario;
         font-size: 25px;
@@ -56,7 +52,26 @@ h4{
     font-size: 45px;
 }
 
+.fotosParrafos{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+}
 
+.imgTarjeta{
+    margin: 25px;
+}
+
+.textTarjeta{
+    margin: 25px;
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    font-size: 30px;
+
+}
+.tituTarjeta{
+    margin: 35px;
+    font-size: 60px;
+}
 /*-------GALERIA CON GRID-----*/
 
 .fondoGal{
@@ -107,31 +122,12 @@ h4{
         }
     }
 }
-.fotosParrafos{
-    font-family: $Body-font-family;
-    color: $colorPrimario;
-}
-
-.card{
-    display: flex;
-    justify-content: space-around;
-
-}
-.card img{
-    margin: 25px;
-}
-.cardText{
-    font-size: 15px;
-}
-.cardTitu{
-    margin: 25px;
-}
-
 /*--------CONTACTO---------*/
 .titu{
+    margin: 30px;
     font-family: $Body-font-family;
     color: $colorPrimario;
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .formRegister{
@@ -181,15 +177,15 @@ footer{
 @media(max-width:768px){
     .fonde{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px auto 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto ;
         grid-template-areas: " header"
                             " main  "
                             "footer ";    
     }
 
-    .divG{
-        grid-template-columns: 1fr 1fr 1fr;
+    .main .divG{
+        grid-template-columns: 1fr 1fr;
     }
 
     img{
@@ -217,7 +213,9 @@ footer{
 }
 @media(max-width: 450px){
 
-
+    .fondeGui{
+        background-position: right;
+    }
     .fondoGal{   
         grid-template-columns: 1fr;
         grid-template-rows: auto;
