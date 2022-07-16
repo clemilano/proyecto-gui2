@@ -39,29 +39,21 @@ body .frase {
   font-size: 25px;
 }
 
-h4 {
-  font-family: Bebas Neue;
-  color: aliceblue;
-  font-size: 45px;
-}
-
 .fotosParrafos {
   font-family: Bebas Neue;
   color: aliceblue;
 }
-
-.imgTarjeta {
-  margin: 25px;
+.fotosParrafos .imgTarjeta {
+  margin: 35px;
+  box-shadow: 7px 13px 37px aliceblue;
 }
-
-.textTarjeta {
+.fotosParrafos .textTarjeta {
   margin: 25px;
   font-family: Bebas Neue;
   color: aliceblue;
   font-size: 30px;
 }
-
-.tituTarjeta {
+.fotosParrafos .tituTarjeta {
   margin: 35px;
   font-size: 60px;
 }
@@ -104,6 +96,7 @@ h4 {
 }
 .main .divG img {
   transition: all 1s;
+  box-shadow: 7px 13px 37px aliceblue;
 }
 .main .divG .mainImg:hover {
   transform: translate(50px, 30px) scale(1.2);
@@ -117,17 +110,17 @@ h4 {
 
 /*--------CONTACTO---------*/
 .titu {
-  margin: 30px;
+  margin: 50px;
   font-family: Bebas Neue;
   color: aliceblue;
   font-size: 60px;
 }
 
 .formRegister {
-  width: 400px;
-  padding: 20px;
-  margin: 45px;
-  box-shadow: 7px 13px 37px #000;
+  width: 800px;
+  padding: 50px;
+  margin: 90px;
+  box-shadow: 7px 13px 37px aliceblue;
 }
 .formRegister .controls {
   width: 100%;
@@ -190,8 +183,10 @@ footer .pie {
     padding: 20px;
     font-size: 15px;
   }
-  .cardText {
-    font-size: 10px;
+  .formRegister {
+    width: 500px;
+    padding: 50px;
+    margin: 90px;
   }
 }
 @media (max-width: 450px) {
@@ -223,12 +218,17 @@ footer .pie {
     margin: 15px;
   }
   .formRegister {
-    width: 300px;
+    width: 400px;
     padding: 20px;
     margin: 20px;
   }
   .titu {
-    margin: 10px;
-    font-size: 25px;
+    margin: 25px;
+    font-size: 55px;
+  }
+}
+@media (max-width: 320) {
+  .frase {
+    font-size: 10px;
   }
 }
