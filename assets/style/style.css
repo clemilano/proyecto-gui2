@@ -204,7 +204,6 @@ footer .pie {
     margin: 5px;
   }
   p {
-    width: 80vw;
     margin: 15px;
     padding: 20px;
     font-size: 15px;
@@ -225,6 +224,9 @@ footer .pie {
   .titu {
     margin: 25px;
     font-size: 55px;
+  }
+  .fondeGui footer {
+    position: relative;
   }
 }
 @media (max-width: 320) {

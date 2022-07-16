@@ -220,7 +220,6 @@ footer{
         margin: 5px;
     }
     p{
-        width: 80vw;
         margin: 15px;
         padding: 20px;
         font-size: 15px;
@@ -236,8 +235,7 @@ footer{
         margin: 15px;
     }
 
-
-.formRegister{
+    .formRegister{
     width: 400px;
     padding: 20px;
     margin: 20px;
@@ -245,6 +243,9 @@ footer{
     .titu{
         margin: 25px;
         font-size: 55px;
+    }
+    .fondeGui footer{
+        position: relative;
     }
 }
 
