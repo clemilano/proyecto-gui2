@@ -1,32 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import "variables";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$colorPrimario: aliceblue;
-$Body-font-family: Bebas Neue;
+@each $var in $body {
+    body-#{$body}{
+        background-image: url(../img/randomfondo.jpg);
+    }}
 
-body{
-    background-image: url(../img/randomfondo.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat:initial;
-    background-size: 100%;
-    background-size: cover;
-    .nav-link{
+.nav-link{
         color: $colorPrimario;
         font-family: $Body-font-family;
         font-size: 35px;
     }
-    .frase{
+.frase{
         font-family: $Body-font-family;
         color: $colorPrimario;
         font-size: 100px;
     }
-}
+
 
 .fondeGui{
     background-image: url(../img/fondeGuiR.jpg);
@@ -48,6 +43,7 @@ body{
         font-size: 25px;
     }
 }
+
 .fotosParrafos{
     font-family: $Body-font-family;
     color: $colorPrimario;
@@ -105,7 +101,6 @@ body{
         img{
             transition: all 1s;
             box-shadow: 7px 13px 37px $colorPrimario; 
-
         }
         .mainImg:hover{
             transform: translate(50px,30px) scale(1.2);
@@ -152,8 +147,6 @@ body{
 /*---FOOTER---*/
 
 footer{
-    grid-area: footer;
-    width: 100%;
     font-family: $Body-font-family;
     color: $colorPrimario;
     .img{
@@ -183,19 +176,15 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
 
-    img{
-        max-width: 350px;
-        max-height: 300px;
-    }
     .frase{
         font-size: 50px;
     }
     .fraseQuemSou{
-        margin: 50px;
-        padding: 15px;
-        font-size: 20px;
+        margin: 35px;
+        padding: 10px;
+        font-size: 10px;
     }
-    p{
+    .p{
         margin: 35px;
         padding: 20px;
         font-size: 15px;
@@ -206,6 +195,8 @@ footer{
         padding: 50px;
         margin: 90px;}
 
+        .footer{
+            position: relative !important;}
 }
 @media(max-width: 450px){
 
@@ -234,12 +225,6 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    img{
-        max-width: 350px;
-        max-height: 300px;
-        margin: 15px;
-    }
-
     .formRegister{
     width: 400px;
     padding: 20px;
@@ -256,7 +241,7 @@ footer{
 
 @media(max-width: 320){
     .frase{
-        font-size: 10px;
+        font-size: 5px !important;
     }
 }
 @media (max-width: 616px){
@@ -266,6 +251,7 @@ footer{
         margin: 25px;
     }
 }
+
 
 @media (max-width: 548px){
     .footer{
