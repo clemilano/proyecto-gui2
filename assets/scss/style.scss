@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.navbar-toggler{
+    background-color: rgb(0, 0, 0);
+}
 @mixin propiedades ($ancho,$relleno,$margen) {
     width: $ancho;
     padding: $relleno;
@@ -192,8 +194,12 @@ footer{
 
     .main .divG{
         grid-template-columns: 1fr 1fr;
+        margin: 100px;
     }
-
+    img{
+        max-width: 350px;
+        max-height: 250px;
+    }
     .frase{
         font-size: 50px;
     }
