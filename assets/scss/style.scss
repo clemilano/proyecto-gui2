@@ -67,6 +67,16 @@ body{
         font-size: 60px;
     }
 }
+.textTarjeta1{
+    margin: 30px;
+    color: $colorPrimario;
+
+}
+.textTarjeta2{
+    font-size: 60px;
+    @extend .textTarjeta1
+}
+
 /*-------GALERIA CON GRID-----*/
 
 .fondoGal{
