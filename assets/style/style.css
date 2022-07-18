@@ -101,7 +101,7 @@ body .frase {
 .main .divG {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 35px;
+  justify-items: center;
   row-gap: 25px;
 }
 .main .divG img {
@@ -175,7 +175,7 @@ footer .pie {
   }
   .main .divG {
     grid-template-columns: 1fr 1fr;
-    margin: 100px;
+    justify-items: center;
   }
   img {
     max-width: 350px;
@@ -221,6 +221,7 @@ footer .pie {
   }
   .main .divG {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
   .formRegister {
     width: 400px;
