@@ -6,22 +6,24 @@
     box-sizing: border-box;
 }
 
-@each $var in $body {
-    body-#{$body}{
-        background-image: url(../img/randomfondo.jpg);
-    }}
-
-.nav-link{
-        color: $colorPrimario;
-        font-family: $Body-font-family;
-        font-size: 35px;
+body{ 
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+    .nav-link{
+    color: $colorPrimario;
+    font-family: $Body-font-family;
+    font-size: 35px;
     }
-.frase{
-        font-family: $Body-font-family;
-        color: $colorPrimario;
-        font-size: 100px;
+    .frase{
+    font-family: $Body-font-family;
+    color: $colorPrimario;
+    font-size: 100px;
     }
-
+}
 
 .fondeGui{
     background-image: url(../img/fondeGuiR.jpg);
@@ -195,8 +197,6 @@ footer{
         padding: 50px;
         margin: 90px;}
 
-        .footer{
-            position: relative !important;}
 }
 @media(max-width: 450px){
 
