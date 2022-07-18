@@ -7,7 +7,11 @@
     box-sizing: border-box;
 }
 
-
+@mixin propiedades ($ancho,$relleno,$margen) {
+    width: $ancho;
+    padding: $relleno;
+    margin: $margen;
+}
 
 body{ 
     background-image: url(../img/randomfondo.jpg);
@@ -68,13 +72,13 @@ body{
     }
 }
 .textTarjeta1{
-    margin: 30px;
+    margin: 25px;
     color: $colorPrimario;
+    font-size: 30px
 
 }
 .textTarjeta2{
-    font-size: 60px;
-    @extend .textTarjeta1
+    @extend .textTarjeta1;
 }
 
 /*-------GALERIA CON GRID-----*/
@@ -140,11 +144,7 @@ body{
     box-shadow: 7px 13px 37px #000;
     @include propiedades(800px,50px,90px)
 }
-@mixin propiedades ($ancho,$relleno,$margen) {
-    width: $ancho;
-    padding: $relleno;
-    margin: $margen;
-}
+
 .controls{
     width: 100%;
     padding: 10px;
