@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "variables";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 body{ 
     background-image: url(../img/randomfondo.jpg);
@@ -51,7 +54,7 @@ body{
     color: $colorPrimario;
     .imgTarjeta{
         margin: 35px;
-        box-shadow: 7px 13px 37px $colorPrimario; 
+        box-shadow: 7px 13px 37px #000; 
     }
     .textTarjeta{
         margin: 25px;
@@ -102,7 +105,7 @@ body{
         row-gap: 25px;
         img{
             transition: all 1s;
-            box-shadow: 7px 13px 37px $colorPrimario; 
+            box-shadow: 7px 13px 37px #000; 
         }
         .mainImg:hover{
             transform: translate(50px,30px) scale(1.2);
@@ -117,33 +120,36 @@ body{
 }
 /*--------CONTACTO---------*/
 .titu{
-    margin: 50px;
-    font-family: $Body-font-family;
-    color: $colorPrimario;
-    font-size: 60px;
+    margin: map-get($titulo , margin );
+    font-family: map-get($titulo , font-family );
+    color: map-get($titulo , color );
+    font-size: map-get($titulo , font-size );
 }
 
 .formRegister{
-    width: 800px;
-    padding: 50px;
-    margin: 90px;
-    box-shadow: 7px 13px 37px $colorPrimario;
-    .controls{
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: none;
-        font-family: $Body-font-family;
-    }
-    .botons{
-        width: 100%;
-        border: none;
-        padding: 10px;
-        margin: 16px 0;
-        font-family: $Body-font-family;
-        font-size: 15px;
-    }
+    box-shadow: 7px 13px 37px #000;
+    @include propiedades(800px,50px,90px)
+}
+@mixin propiedades ($ancho,$relleno,$margen) {
+    width: $ancho;
+    padding: $relleno;
+    margin: $margen;
+}
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    font-family: $Body-font-family;
+}
+.botons{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 16px 0;
+    font-family: $Body-font-family;
+    font-size: 15px;
 }
 
 /*---FOOTER---*/

@@ -51,7 +51,7 @@ body .frase {
 }
 .fotosParrafos .imgTarjeta {
   margin: 35px;
-  box-shadow: 7px 13px 37px aliceblue;
+  box-shadow: 7px 13px 37px #000;
 }
 .fotosParrafos .textTarjeta {
   margin: 25px;
@@ -102,7 +102,7 @@ body .frase {
 }
 .main .divG img {
   transition: all 1s;
-  box-shadow: 7px 13px 37px aliceblue;
+  box-shadow: 7px 13px 37px #000;
 }
 .main .divG .mainImg:hover {
   transform: translate(50px, 30px) scale(1.2);
@@ -123,10 +123,10 @@ body .frase {
 }
 
 .formRegister {
-  width: 800px;
+  @inc width: 800px;
   padding: 50px;
   margin: 90px;
-  box-shadow: 7px 13px 37px aliceblue;
+  box-shadow: 7px 13px 37px #000;
 }
 .formRegister .controls {
   width: 100%;

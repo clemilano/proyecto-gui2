@@ -1,2 +1,9 @@
 $colorPrimario: aliceblue;
 $Body-font-family: Bebas Neue;
+
+$titulo:(
+    margin: 50px,
+    font-family: $Body-font-family,
+    color: $colorPrimario,
+    font-size: 60px,
+)
