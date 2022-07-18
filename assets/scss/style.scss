@@ -124,6 +124,18 @@ body{
         .mainImg2:hover{
             transform: scale(1.2);
         }
+        .mainImg{
+            width: 30vw;
+            height: 30vw;
+        }
+        .mainImg1{
+            width: 30vw;
+            height: 30vw;
+        }
+        .mainImg2{
+            width: 30vw;
+            height: 30vw;
+        }
     }
 }
 /*--------CONTACTO---------*/
@@ -188,9 +200,17 @@ footer{
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
-    img{
-        max-width: 350px;
-        max-height: 250px;
+    .mainImg{
+        width: 45vw;
+        height: 45vw;
+    }
+    .mainImg1{
+        width: 45vw;
+        height: 45vw;
+    }
+    .mainImg2{
+        width: 45vw;
+        height: 45vw;
     }
     .frase{
         font-size: 50px;
@@ -238,6 +258,18 @@ footer{
     .main .divG{
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+    .mainImg{
+        width: 90vw;
+        height: 90vw;
+    }
+    .mainImg1{
+        width: 90vw;
+        height: 90vw;
+    }
+    .mainImg2{
+        width: 90vw;
+        height: 90vw;
     }
 
     .formRegister{
